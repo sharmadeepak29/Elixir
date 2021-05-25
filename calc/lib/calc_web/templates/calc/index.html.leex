@@ -1,0 +1,29 @@
+<div id="calc" phx-keydown="keydown" phx-target="window">
+    <h1><%= @display %></h1>
+    <button phx-click="reset" class="util">C</button>
+    <button phx-click="operator" phx-value-operator='/' class="operator">/</button>
+    <button phx-click="operator" phx-value-operator='*' class="operator">x</button>
+    <button phx-click="operator" phx-value-operator='+' class="operator">+</button>
+    <br/>
+    <button phx-click="digit" phx-value-digit=7>7</button>
+    <button phx-click="digit" phx-value-digit=8>8</button>
+    <button phx-click="digit" phx-value-digit=9>9</button>
+    <button phx-click="operator" phx-value-operator='-' class="operator">-</button>
+    <br/>
+    <button phx-click="digit" phx-value-digit=4>4</button>
+    <button phx-click="digit" phx-value-digit=5>5</button>
+    <button phx-click="digit" phx-value-digit=6>6</button>
+    <button phx-click="digit" phx-value-digit=0 class="span-2">0</button>
+    <br/>
+    <button phx-click="digit" phx-value-digit=1>1</button>
+    <button phx-click="digit" phx-value-digit=2>2</button>
+    <button phx-click="digit" phx-value-digit=3>3</button>
+    <button phx-click="solve" phx-value-solve='='>=</button>
+    <br/>
+    <hr/>
+    @value: <%= @value %>
+    <br/>
+    @display: <%= @display %>
+    <br/>
+
+    </div>
